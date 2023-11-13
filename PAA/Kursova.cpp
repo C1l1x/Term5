@@ -30,11 +30,9 @@
 using namespace std;
 
 void FindGreaterNumber(int n){
-    int num, left, result;
+    int num;
     num = n / 2;
-    left = num * 2;
-    left-= n;
-    if (left != 0)
+    if (n%2 != 0)
     {
         cout << 7;
         for (int i = 0; i < num-1; i++)
