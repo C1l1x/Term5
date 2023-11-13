@@ -31,25 +31,24 @@ using namespace std;
 
 void FindGreaterNumber(int n){
     int num;
+    string result;
     num = n / 2;
     if (n%2 != 0)
     {
-        cout << 7;
+        result += "7";
         for (int i = 0; i < num-1; i++)
         {
-            cout << 1;
+            result += "1";
         }
-        cout << "\n";
     }else
     {
         for (int i = 0; i < num; i++)
         {
-            cout << 1;
+            result += "1";
         }
-        cout << "\n";
         
     }
-    
+    cout << result << "\n";
 }
 
 int main() {

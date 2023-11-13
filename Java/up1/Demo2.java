@@ -5,11 +5,12 @@ public class Demo2 {
 
     static void input()
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("a=");
-        a = sc.nextInt();
-        System.out.print("b=");
-        b = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("a=");
+            a = sc.nextInt();
+            System.out.print("b=");
+            b = sc.nextInt();
+        }
     }
     static int maxAB(int a, int b)
     {

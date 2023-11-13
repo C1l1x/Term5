@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class Demo1 {
     public static void main(String[] args) {
         int a,b,max,s;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("a=");
-        a = sc.nextInt();
-        System.out.print("b=");
-        b = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("a=");
+            a = sc.nextInt();
+            System.out.print("b=");
+            b = sc.nextInt();
+        }
         if (a > b) {
             max = a;
         }else{
