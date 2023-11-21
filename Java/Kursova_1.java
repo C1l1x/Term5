@@ -6,11 +6,21 @@
 
 package Java;
 
+import java.util.Scanner;
+
 /**
  * Kursova_1
  */
 public class Kursova_1 {
 
+    static int points;
+
+    Scanner sc = new Scanner(System.in);
+    
+    static void getInput() {
+        System.out.println("Insert how much points: ");
+        
+    }
     public static void main(String[] args) {
         
     }

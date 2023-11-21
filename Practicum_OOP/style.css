@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #121212;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    background-color: #222;
+    display: flex;
+    font-size: 30px;
+    position: fixed;
+}
+
+.Logo{
+    width: 100%;
+    height: 80px;
+    margin: 0% 1%;
+    display: flex;
+    color: #bb86fc;
+}
+
+.account{
+    float: right;
+    color: #bb86fc;
+    cursor: pointer;
+}
+
+.limit-box{
+    margin-top: 8%;
+    margin-left: 7%;
+    background-color: #222;
+    width: 50%;
+    height: 450px;
+    border-radius: 25px;
+    float: left;
+    display: flex;
+}
+
+.limits{
+    margin: 5% 5% auto;
+    color: white;
+    font-size: 25px;
+}
+
+.Finance{
+    margin-top: 8%;
+    margin-left: 62%;
+    background-color: #222;
+    width: 30%;
+    height: 80%;
+    border-radius: 25px;
+    float: right;
+    display: block;
+    position: fixed;
+}
+
+.fin{
+    text-align: center;
+    margin-top: 8%;
+    padding: 2% 0%;
+    font-size: 30px;
+    color: white;
+}
+
+.pie-finance{
+    position: flex;
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto 28%;
+    background-image: conic-gradient(
+        white 70deg,
+        green 0
+    );
+}
+
+.pie-diagram{
+    display: block; 
+    position: flex; 
+    width: 250px; 
+    height: 250px;
+    margin: auto 28%; 
+    border-radius: 50%; 
+    background-image: conic-gradient( 
+        pink 70deg,  
+        lightblue 0 235deg,  
+        orange 0);
+}
+
+ul li{
+    margin-top: 1%;
+    margin-left: 7%;
+    background-color: #222;
+    width: 50%;
+    height: 10%;
+    border-radius: 25px;
+    float: left;
+    display: flex;
+    font-size: 25px;
+    padding: 2% 3%;
+    color: white;
+}
