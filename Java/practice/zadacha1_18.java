@@ -21,6 +21,7 @@ public class zadacha1_18 extends Frame {
         
         private int rect;
         private int x[] = new int[rect], y[] = new int[rect];
+        private int x_size[] = new int[rect], y_size[] = new int[rect];
 
     zadacha1_18() throws FileNotFoundException {
         super("Пример за графика");
@@ -33,13 +34,18 @@ public class zadacha1_18 extends Frame {
         Scanner reader = null;
         reader=new Scanner(new File("data.txt"));
         rect = reader.nextInt();
+        System.out.println(rect);
         
         x = new int[rect];
         y = new int[rect];
+        x_size = new int[rect];
+        y_size = new int[rect];
         
         for (int i = 0; i < rect; i++) {
             x[i] = reader.nextInt();
             y[i] = reader.nextInt();
+            x_size[i] = reader.nextInt();
+            y_size[i] = reader.nextInt();
         }
         reader.close();
         repaint();
@@ -54,13 +60,11 @@ public class zadacha1_18 extends Frame {
     }
     public void paint(Graphics g) {
         Random rand = new Random();
-        int x_size = 100, y_size = 100;
         for (int i = 0; i < rect; i++) {
             float red = rand.nextFloat(), green = rand.nextFloat(), blue = rand.nextFloat();
             Color getColor = new Color(red, green, blue);
             g.setColor(getColor);
-            g.fillRect(x[i], y[i], x_size, y_size);
-            x_size += 25; y_size += 25;
+            g.fillRect(x[i], y[i], x_size[i], y_size[i]);
         }
     }
 
